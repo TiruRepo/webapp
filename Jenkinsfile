@@ -1,9 +1,7 @@
 pipeline {  
-    agent {
-        label 'Ansible-Node'
-    }    
+    agent any
     tools{
-        maven "Maven-3.9.6"
+        maven "Maven-3.9.9"
     }
     stages {
         stage('Clone') {
@@ -16,14 +14,6 @@ pipeline {
                sh 'mvn clean package'
             }
         }        
-        stage('Create Image'){
-            steps{
-               steps {
-                	script {
-                		sh 'ansible-playbook task.yml'
-                	}
-                }
-            }
-        }
+      
     }
 }
