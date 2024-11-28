@@ -4,7 +4,7 @@
   <groupId>in.techtiru</groupId>
   <artifactId>maven-web-app</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>3.0-RELEASE</version>
   <name>maven-web-app</name>
   <url>http://maven.apache.org</url>
  
